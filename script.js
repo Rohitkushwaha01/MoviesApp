@@ -5,6 +5,10 @@ const SEARCHAPI = `https://api.themoviedb.org/3/search/movie?api_key=${API_KEY}&
 
 const main = document.getElementById("main");
 const span = document.getElementById("span");
+const form = document.querySelector("form");
+const input = document.querySelector("input");
+const cross = document.querySelector(".cross");
+const navbar = document.querySelector(".navbar");
 
 getMovies(API_URL);
 
@@ -60,3 +64,16 @@ function getColor(vote){
         return 'red';
     }
 }
+
+// form
+form.addEventListener('submit', function(e){
+  e.preventDefault();
+  console.log(SEARCHAPI + input.value)
+  searchMovies(SEARCHAPI + input.value);
+})
+
+
+// Navbar
+cross.addEventListener('click', function(){
+  navbar.classList.toggle('hidden')
+})

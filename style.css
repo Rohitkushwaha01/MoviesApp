@@ -21,6 +21,24 @@ header{
     flex-wrap: wrap;
 }
 
+/* navbar */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 600px;
+}
+
+.cross{
+    display: none;
+    font-size: 1.4rem;
+}
+
+.hidden{
+    display: none !important; 
+}
+
+
 .search{
     background-color: var(--secondary-color);
     color: var(--white-color);
@@ -101,10 +119,29 @@ span{
     transform: translate(0%);
 }
 
+@media screen and (max-width:860px) {
+    header{
+        justify-content: center;
+    }
+    .logo{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .cross{
+        display: flex;
+    }
+}
+
 @media screen and (max-width:600px) {
     .movie-container{
         width:500px;
         margin: 20px;
+    }
+    .navbar{
+        display: inline;
+        text-align: center;
     }
 }
 
