@@ -34,10 +34,10 @@ header{
     font-size: 1.4rem;
 }
 
-.hidden{
-    display: none !important; 
+.navbar p a{
+    text-decoration: none;
+    color: white;
 }
-
 
 .search{
     background-color: var(--secondary-color);
@@ -131,6 +131,9 @@ span{
     }
     .cross{
         display: flex;
+    }
+    .hidden{
+        display: none !important; 
     }
 }
 
