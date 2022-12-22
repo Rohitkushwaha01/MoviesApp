@@ -57,6 +57,11 @@ header{
     color: var(--white-color);
 }
 
+.backdrop-image{
+    width: 80%;
+    margin: auto;
+}
+
 #main{
     display: flex;
     justify-content: space-between;
@@ -117,6 +122,23 @@ span{
 
 .movie-container:hover .overview{
     transform: translate(0%);
+}
+
+.arrow-size{
+    font-size: 2.5rem;
+    position: absolute;
+}
+
+.left-arrow{
+    left: 28px;
+    background: black;
+    top: 50%;
+}
+
+.right-arrow{
+    right: 28px;
+    background: black;
+    top: 50%;
 }
 
 @media screen and (max-width:860px) {
